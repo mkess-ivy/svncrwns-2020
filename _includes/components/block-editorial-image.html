@@ -1,0 +1,16 @@
+<div class="grid">
+	<div class="project-highlights">project highlights</div>
+	<section class="editorial_images">
+		{% for item in section.editorial-images %}
+			<img src="{{ item.image-name }}" class="block-editorial-img"/>
+			<div class="caption_wrapper">
+				<div class="editorial-caption-title">{{ item.image-caption-title }}</div>
+				<div class="editorial_caption">{{item.image-caption}}</div>
+				{% for thing in item.lists %}
+				<div class="editorial_caption">{{ thing.list }}
+				{% endfor %}
+			</div>
+		{% endfor %}
+	
+	</section>
+</div>

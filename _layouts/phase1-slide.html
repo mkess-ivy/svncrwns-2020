@@ -1,0 +1,11 @@
+{% include grid/head_header_color.html %}
+
+  <div class="phase1_slider">
+    {% for item in site.data[page.slider] %}
+      <div class="phase1_cover_slide" style="background-image:url('{{ item.slide }}')"></div>
+    {% endfor %}
+  </div>
+
+  {% include components/phase-slide-title.html %}
+
+{% include grid/end_footer.html %}

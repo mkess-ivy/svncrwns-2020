@@ -1,0 +1,497 @@
+// Grids
+.grid {
+  margin: 15px 30px;
+  position: relative;
+
+  @include palm-mid {
+    max-width: 450px;
+    margin: 10px auto;
+  }
+  @include tablet-small {
+    max-width: 550px;
+  }
+  @include tablet {
+    max-width: none;
+    margin: 10px 50px 0;
+  }
+  @include desktop-blah {
+    margin: 10px 100px 0;
+  }
+  @include tv {
+    max-width: 1350px;
+    margin: 10px 140px;
+  }
+  &.fixed_width_grid {
+    @include desktop {
+        margin: 10px 50px 0;
+    }
+    @include desktop-blah {
+        margin: 10px 100px 20px;
+    }
+    @include widescreen {
+        max-width: 1200px;
+        margin: 0 auto 25px;
+    }
+  }
+}
+.grid.blm {
+  @extend .grid;
+
+  @include tv {
+    margin: 10px auto;
+  }
+}
+.grid.services-now {
+  @include palm-mid {
+    padding-top: 75px;
+  }
+}
+.grid_lp {
+  @include desktop-blah {
+      max-width: 1000px;
+      margin: auto;
+  }
+}
+.grid_project {
+  padding: 7px 15px 0;
+  @include tablet {
+      max-width: none;
+      padding: 0px 50px 0px;
+  }
+  @include desktop-blah {
+      padding: 0px 100px 0px;
+  }
+  @include tv {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.grid_slide {
+    background-color: $off-white;
+    @extend .grid_project;
+
+    @include tablet {
+        padding: 10px 50px;
+    }
+}
+.pagination_grid {
+    margin: 15px 15px 75px;
+    position: relative;
+
+    @include palm-mid {
+        max-width: 450px;
+        margin: 10px auto;
+    }
+    @include tablet {
+        max-width: none;
+        margin: 10px 50px 0;
+    }
+    @include desktop-blah {
+        width: 20%;
+        margin: 0;
+        position: fixed;
+        right: 70px;
+        bottom: 3vh;
+    }
+    @include tv {
+        max-width: 225px;
+        right: 120px;
+    }
+}
+
+.grid_full {
+    @include laptop {
+        margin: 0 50px;
+    }
+    @include desktop-blah {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    &.fixed_width_grid {
+        @include desktop {
+            margin: 10px 50px 0 20px;
+        }
+        @include desktop-blah {
+            margin: 10px 100px 20px;
+        }
+        @include widescreen {
+            max-width: 1200px;
+            margin: 0 auto 25px;
+        }
+    }
+    &.fluid_width_grid {
+        @include desktop {
+            margin: 10px 50px 0 20px;
+        }
+        @include widescreen {
+            margin: 0 50px 0 20px;
+        }
+        @include tv {
+            margin: 0 100px 0 20px;
+        }
+    }
+}
+.grid_single_post {
+  @include laptop {
+    margin: 0 50px;
+  }
+  @include desktop-blah {
+    margin: 0 100px 0 40px;
+  }
+  &.fixed_width_grid {
+    @include desktop {
+      margin: 10px 50px 0 20px;
+    }
+    @include desktop-blah {
+      margin: 10px 100px 20px;
+    }
+    @include widescreen {
+      max-width: 1200px;
+      margin: 0 auto 25px;
+    }
+  }
+  &.fluid_width_grid {
+    @include desktop {
+      margin: 10px 50px 0 100px;
+    }
+    @include tv {
+      margin: 0 100px 0 100px;
+    }
+  }
+}
+
+.grid-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+}
+.grid-smash {
+  margin: auto;
+  position: relative;
+  padding: 15px;
+
+  @include palm-mid {
+    max-width: 450px;
+  }
+  @include tablet-small {
+    max-width: 500px;
+  }
+  @include tablet {
+    max-width: none;
+    margin: 0px 50px 0;
+  }
+  @include desktop-blah {
+    margin: 0px 100px 0;
+  }
+}
+
+// Test
+a.phase1-btn {
+    font-size: 22px;
+    font-weight: 100;
+    font-family: $font-brand4;
+}
+a.phase1-btn:link,
+a.phase1-btn:visited {
+    position: relative;
+    display: block;
+    color: $off-black;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 3;
+    border-radius: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+a.phase1-btn:link:hover,
+a.phase1-btn:visited:hover {
+    color: $off-black;
+    text-shadow: none;
+    border-bottom: 0;
+}
+a.phase1-btn {
+    color: #FFF;
+}
+.phase1-open {
+    width: 100%;
+    background: $off-white;
+}
+.phase1-wrap {
+    width: 450px;
+    margin: 0 auto;
+}
+// #Test
+
+
+.short_body_wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+.short_body {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 1;
+
+    @include tablet {
+      margin-bottom: 5px;
+    }
+}
+.phase1-film-wrapper {
+    height: 75vh !important;
+
+    @include tablet {
+      height: 80vh !important;
+    }
+}
+.projectphase-title {
+    font-size: 22px;
+    line-height: 1;
+    color: $off-black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $font-brand4;
+
+    @include palm {
+        font-size: 26px;
+    }
+
+    @include tablet {
+        padding-top: 15px;
+        font-size: 32px;
+    }
+}
+.phase-subtitle {
+    text-transform: initial;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.2;
+    padding-top: 7px;
+
+    @include palm-mid {
+        font-size: 20px;
+        padding-right: 30px;
+    }
+    @include tablet {
+        width: 70%;
+    }
+    @include desktop {
+        width: 50%;
+    }
+}
+.returnwork {
+    padding: 15px 0 35px;
+    font-size: 16px;
+    line-height: 1.2;
+    width: 120px;
+
+    @include tablet {
+        width: 170px;
+    }
+
+    a {
+
+        &.slide_returnwork {
+            color: $off-black;
+        }
+    }
+}
+// film button
+.svn-play-btn {
+    position: relative;
+
+    @include tablet {
+        position: inherit;
+        top:auto;
+        left: auto;
+    }
+}
+
+// Slide
+.phase1_cover_slide {
+  width: 100%;
+  background-size:cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 60vh !important;
+
+  @include tablet {
+      height: 80vh !important;
+  }
+}
+.caret_slide {
+  position: absolute;
+  z-index: 3;
+  width: 25px;
+  bottom: -38px;
+
+  &.left {
+      right: 75px;
+      @include tablet {
+          right: 125px;
+      }
+  }
+  &.right {
+      right: 30px;
+      @include tablet {
+          right: 75px;
+      }
+  }
+}
+.slidephase-title {
+  @extend .projectphase-title;
+  position: relative;
+  color: $off-black;
+  padding: 35px 25px 5px;
+  bottom: auto;
+  left: auto;
+
+  @include desktop {
+      padding: 35px 0 5px;
+  }
+}
+
+// Web Slider
+.slide_web_cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 60vh;
+
+  @include tablet {
+    height: calc(100vh - 120px);
+  }
+  @include tv {
+    height: calc(90vh - 115px);
+  }
+}
+.phase1_slider {
+  margin-bottom: 5em;
+}
+
+.phase1_slider_web {
+    width: 100%;
+}
+.phase1_cover_slide_web {
+  width: 100%;
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 35vh !important;
+
+  @include palm-mid {
+    height: 50vh !important;
+  }
+
+  @include tablet {
+    height: 60vh !important;
+  }
+
+  @include tv {
+    background-size: contain;
+    height: calc(90vh - 115px);
+  }
+}
+.caret_slide_web {
+  position: absolute;
+  z-index: 3;
+  width: 25px;
+  bottom: -115px;
+
+  @include tablet {
+    bottom: -190px;
+  }
+  &.left {
+    right: 75px;
+    @include tablet {
+        right: 125px;
+    }
+  }
+  &.right {
+    right: 30px;
+    @include tablet {
+        right: 75px;
+    }
+  }
+}
+
+// Brand identity Form
+.form_title_svn {
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: 'Montserrat',sans-serif;
+  position: absolute;
+  z-index: -1;
+  top: 45px;
+  left: 0;
+  right: 0;
+  font-size: 2.3em;
+
+  @include tablet {
+    top: 7px;
+    font-size: 5em;
+  }
+}
+.layout_height_svn {
+  @include tablet {
+      height: calc(100vh - 80px);
+  }
+}
+@media screen and (min-width: 1440px) and (min-height: 920px) {
+  .typeform-widget {
+      height: 750px !important;
+  }
+}
+
+
+// Newsletter Page
+.newsletter_wrapper {
+  @include desktop {
+      height: inherit;
+      top: 6vh;
+      position: relative;
+  }
+}
+.newsletter_page {
+  
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+
+  @include tablet {
+      height: 60vh;
+  }
+  @include desktop {
+      height: 70vh;
+  }
+  @include desktop-blah {
+      background-position: center left;
+      width: 60%;
+      height: 87vh;
+  }
+}
+.newsletter_grid {
+  margin-top: 50px;
+  @include tablet {
+      width: 100%;
+  }
+  @include desktop-blah {
+      margin-top: 0;
+      width: 39%;
+  }
+}
+
+
+

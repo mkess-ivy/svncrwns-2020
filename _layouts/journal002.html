@@ -1,0 +1,24 @@
+{% include grid/head_header_color.html %}
+	
+
+
+<section class="journal-wrapper">
+	{% include components/block-pagination002-journal.html %}
+	<section class="block-journal-meta dipper-alert">
+		<div class="work-space-tag"><a href="/journal">Journal</a></div>
+		<div class="journal-meta-title">{{ page.title }}</div>
+		<div class="journal-meta-summary">{{ page.summary}}</div>
+	</section>
+	<section class="block-journal-content">
+		<div class="journal-masthead" style="background-image:url('{{ page.masthead-image }}');"></div>
+		<div class="journal-wrapper-inner">
+		{% for section in page.page_sections %}
+			{% include components/block-{{section.block}}.html %}
+		{% endfor %}
+		<div class="journal-wrapper-content">{{ content }}</div>
+		</div>
+	</section>
+</section>
+
+{% include components/block-pagination002.html name="Journal" %}
+{% include grid/end_footer.html %}

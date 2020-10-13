@@ -1,0 +1,193 @@
+.beta_page_title {
+	@include heavy_font(24px);
+	padding: 75px 0 50px;
+	@include laptop {
+		padding: 125px 0;
+		font-size: 32px;
+	}
+}
+.discipline_section {
+	@include desktop {
+		width: 85%;
+	}
+}
+.small_alpha {
+	padding-bottom: 50px;
+	@include laptop {
+		width: 48%;
+	}
+	@include desktop {
+		// width: 44%;
+		width: 55%;
+
+	}
+}
+.main_season {
+	padding-top: 100px;
+
+	@include tablet {
+		// padding-bottom: 75px;
+	}
+}
+.season_title {
+	padding-bottom: 50px;
+}
+.portfolio_single_work {
+	width: 100%;
+	padding-bottom: 30px;
+	padding: 0 10px 50px 0;
+  	animation: fadeInTop 1s 0.5s linear both;
+  	-webkit-animation: fadeInTop 1s 0.5s linear both;
+
+	@include palm-mid {
+		padding-bottom: 50px;
+	}
+	@include tablet {
+		width: 50%;		
+	}
+	@include laptop {
+		width: 33%;
+	}
+	@include desktop {
+		width: 32%;
+	}
+
+	.portfolio_single_img {
+		height: 250px;
+		background: black;
+		margin-bottom: 10px;
+		background-size: cover;
+		background-position: center;
+
+		@include palm-mid {
+			height: 320px;
+		}
+
+		@include laptop {
+			height: 250px;
+		}
+		@include tv {
+			height: 320px;
+		}
+		&:hover {
+			filter: blur(1.5px)sepia(50%);
+			transition: 1.5s;
+			-webkit-filter: blur(1.5px)sepia(50%);
+			-webkit-transition: 1.5s;
+			-moz-filter: blur(1.5px)sepia(50%);
+			-moz-transition: 1.5s;
+		}
+	}
+	.portfolio_single_title {
+		@include medium_font(16px);
+		text-align: center;
+	}
+}
+
+// Filter for Projects 
+.filter-container {
+  overflow: hidden;
+}
+.filterDiv {
+	display: none;
+}
+.show {
+  display: block;
+}
+#myBtnContainer {
+	margin: 0 auto 7em;
+	text-align: center;
+}
+.filterProjects {
+  text-transform: uppercase;
+  font-family: $font-brand4;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  animation: fadeInTop 1s 0.7s linear both;
+  -webkit-animation: fadeInTop 1s 0.7s linear both;
+}
+.filter-title {
+	margin-bottom: 1.5em;
+	letter-spacing: 2px;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 6px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid;
+  cursor: url('/dist/images/cursor-circle.png'), auto;
+  font-family: $font-brand4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  margin: 10px auto;
+  display: block;
+
+  @include laptop {
+  	display: inline;
+  	margin: 0 10px;
+  }
+}
+button:hover {
+	cursor: url('/dist/images/cursor-circle.png'), auto;
+}
+.btn:hover {
+  background-color: $soft-red;
+  cursor: url('/dist/images/cursor-circle.png'), auto;
+}
+.btn.active {
+  background-color: $off-black;
+  color: white;
+}
+
+// Page Header 02 Component
+.page-header-02 {
+	margin: 4em 0; 
+	text-align: center;
+	animation-duration: 0.7s;
+	-webkit-animation-duration: 0.7s;
+	animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+	animation-name: fadeAppear;
+	-webkit-animation-name: fadeAppear;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+
+	@include tablet {
+    	margin: 10em auto 6em;
+    	max-width: 750px;
+    	width: 75%;  
+  	}
+
+  	.header-02-title {
+    	padding-bottom: 25px;
+    	text-transform: uppercase;
+    	font-family: $font-brand4;
+    	font-weight: 500;
+    	font-size: 24px;
+
+    	@include palm-mid {
+			font-size: 30px;    		
+    	}
+
+    	@include tablet {
+      		padding-bottom: 50px;
+      		font-size: 36px;
+    	}
+  	}
+
+  	.header-02-text {
+    	font-size: 16px;
+    	line-height: 1.5;
+    	font-weight: 400;
+    	margin: auto;
+
+    	@include desktop {
+      		width: 75%;
+    	}
+	}
+}

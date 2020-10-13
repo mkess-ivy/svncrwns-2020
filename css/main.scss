@@ -1,0 +1,37 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base",
+  "components/fullscreen_video_overlay",
+  "components/phase1",
+  "components/resource",
+  "components/reusable",
+  "components/animations",
+  "components/email-series",
+  "components/bottom-menu",
+  "components/theme2020",
+  "helper/media_queries",
+  "helper/mixins",
+  "helper/settings",
+  "helper/variables",
+  "layout/editorial",
+  "layout/footer",
+  "layout/layout",
+  "layout/navigation",
+  "layout/services_now",
+  "layout/themealpha",
+  "layout/topbar",
+  "pages/archive",
+  "pages/backstage",
+  "pages/contact",
+  "pages/careers",
+  "pages/home",
+  "pages/journal",
+  "pages/landingpage",
+  "pages/work",
+  "syntax-highlighting"
+;

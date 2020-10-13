@@ -1,0 +1,69 @@
+.topbar_section {
+  background: $off-black;
+  padding: 1px 0 5px;
+  width: 100%;
+  position: relative;
+  z-index: 500;
+
+  .topbar_title {
+    text-transform: uppercase;
+    color: $off-white;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-family: $font-brand4;
+    font-weight: 700;
+    text-align: center;
+
+    a {
+      color: $off-white;
+    }
+    a:hover {
+      color: $yellow !important;
+      border-bottom: 0;
+    }
+    a:visited {
+      color: $off-white;
+    }
+  }
+}
+.topbar_link {
+    color: $off-white;
+    font-family: $font-brand4;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-top: 6px;
+    display: inline-block;
+
+    @include tablet {
+      float: right;
+      margin-top: 0px;
+    }
+
+    &:hover {
+      border-bottom: 1px solid;
+      color: $off-white;
+    }
+
+    &:visited {
+      color: $off-white;
+    }
+}
+.topbar_mobile {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+
+  @include tablet {
+    width: auto;
+    text-align: inherit;
+    margin: inherit;
+  }
+}
+.book_cta {
+  display: block !important;
+
+  @include tablet {
+      display: table-cell !important;
+  }
+}

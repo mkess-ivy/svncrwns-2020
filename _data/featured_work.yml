@@ -1,0 +1,47 @@
+---
+- title: Aybe Music
+  image: "/dist/images/home-slide-2.jpg"
+  description: We've been working with singer + songwriter, Aybe on developing her brand identity.  View images from our recent photography sessions
+  category: photo
+  url: "/work/aybe-music/"
+  work-space: client
+- title: Taylor's Barbershop
+  image: "/dist/images/taylorbarbershop_cover.jpg"
+  description: Developed a web platform for mens & womens grooming shop. Includes appointment scheduling and a catalog of products
+  category: website
+  url: "/work/taylors-barbershop"
+  work-space: client
+- title: FAM @ Walters Art Museum
+  image: "/dist/images/fam_at_walters_cover.jpg"
+  description: Produced and directed an editorial shoot for the induction of FAM's
+    2018-2019 Electoral Board @ Morgan State University.
+  category: photo
+  url: "/backstage/fam-at-walters-art-museum/"
+  work-space: in-house
+- title: Our Brother's Keeper
+  image: "/dist/images/obk_cover.jpg"
+  description: a short film about the intimate space of barbershops told through the
+    lens of women.
+  category: film
+  url: "/backstage/our-brothers-keeper/"
+  work-space: in-house
+- title: Believing Takes Time
+  image: "/dist/images/btt-project-1.jpg"
+  description: A youth photography exhibit created to share artrepreneurship skills
+    with youth
+  category: event
+  url: "/backstage/believing-takes-time/"
+  work-space: in-house
+- title: Greenmount West CC
+  image: "/dist/images/gwcc-cover.jpg"
+  description: Worked with institution to develop programming, branding and digital
+    platform.
+  category: website
+  url: "/work/gwcc/"
+  work-space: client
+- title: AVAM Logan Visionary Conference
+  image: "/dist/images/catalog_avam_logan.jpg"
+  description: Completed media coverage for 2018 Logan Visionary Conference hosted by American Visionary Art Museum in Baltimore, MD.
+  category: film
+  url: "/work/avam-logan-visionary-conference/"
+  work-space: client

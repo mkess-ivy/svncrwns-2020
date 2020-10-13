@@ -1,0 +1,117 @@
+.yellow-box {
+  height: 400px;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+      justify-content: center;
+  @include palm-mid {
+    height: 550px;
+  }
+  @include tablet {
+    width: 90%;
+  }
+}
+.html5videohere {
+  position: relative;
+}
+
+/* Fullscreen Overlay */
+.svn-video-overlay {
+  width: 100%;
+  background: rgba(200, 243, 48,.9);
+  position: fixed;
+  z-index: 5;
+  opacity: 0;
+  left: -100%;
+  height: 100vh;
+  top: 0;
+  transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+}
+.play {
+  width: 70px;
+  height: 70px;
+  background: #222;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 50%;
+  border: 4px solid $yellow;
+  color: $off-black;
+  background-color: $yellow !important;
+  padding: 2em 1.4em;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: $font-brand4;
+}
+.play:hover {
+  background: $color-brand5 !important;
+  color: blue;
+  cursor: pointer;
+}
+// .play:after {
+//   position: absolute;
+//   content: "";
+//   top: 50%;
+//   margin-top: -15px;
+//   left: 50%;
+//   margin-left:  -8px;
+//   width: 0;
+//   height: 0;
+//   border-style: solid;
+//   border-width: 15px 0 15px 20px;
+//   border-color: transparent transparent transparent $off-black;
+//   &:hover {
+//       border-color: transparent transparent transparent blue;
+//   }
+// }
+.video-container {
+  width: 90%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, 15%);
+  -webkit-transform: translate(-50%, 15%);
+
+  @include laptop {
+      top: 7%;
+  }
+  @include desktop {
+      top: 0;
+      width: 80%;
+  }
+}
+.html5-close {
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  color: black;
+  background: transparent;
+  border: transparent;
+  text-align: center;
+  right: 5px;
+  top: -70px;
+  z-index: 200;
+
+  @include desktop {
+      top: 0px;
+  }
+}
+.html5-close:hover {
+  fill: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+.html5-show {
+  opacity: 1;
+}

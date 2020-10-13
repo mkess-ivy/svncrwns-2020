@@ -1,0 +1,21 @@
+
+	<div class="collapsed_menu_wrapper">
+	
+		{% unless page.title == "SVNCRWNS - Home" %}
+		<ul>
+			{% for menu-item in site.data.menus.header %}
+			<li class=""><a href="{{ menu-item.url }}" {% if page.layout == "services-now" %}style="color: #f7f7f7;"{% endif %}>{{ menu-item.title }}</a></li>
+			{% endfor %}
+		</ul>
+		
+		{% endunless %}
+
+		{% if page.title == "SVNCRWNS - Home" %}
+		<ul>
+			{% for menu-item in site.data.menus.header %}
+			<li class="themealpha-nav"><a href="{{ menu-item.url }}">{{ menu-item.title }}</a></li>
+			{% endfor%}
+		</ul>
+		
+		{% endif %}
+	</div>

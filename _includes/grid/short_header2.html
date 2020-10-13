@@ -1,0 +1,17 @@
+<header class="phase1-site-header {% if page.layout == "blocks-layout" or page.layout == "editorial" %}blocks-layout-header{% endif %}" {% if page.layout == "services-now" %} style="background: transparent;"{% endif %}>
+	{% include grid/newsletter_topbar.html %} 
+    <div class="left_header">
+      	<div class="grid_project site-logo">
+        	<div class="frow justify-between">
+            	{% for item in site.data.site-settings %}
+	            <a href="/"><img src="{{ item.global-logo }}" width="{{ item.width }}" style="margin: 5px 0;" /></a>
+	            {% endfor %}
+	            {% include grid/collapsed_menu.html %}
+	        </div>
+	        
+	        {% include phase1_overlay_menu3.html %}
+	    </div>
+	</div>
+</header>
+
+<script type="text/javascript" src="https://downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"ab04d0cabec9aa1f49ca3e65e","lid":"2fe748f030","uniqueMethods":true}) })</script>

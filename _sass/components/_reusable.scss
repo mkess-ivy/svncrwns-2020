@@ -1,0 +1,919 @@
+// Credits002 -- Journal
+.block-credits002 {
+  background-color: $soft-red;
+  // margin-bottom: 10em;
+  margin-bottom: 5em;
+
+  position: relative;
+  padding-left: 25px;
+
+  @include palm-mid {
+    // padding-left: 2em;
+  }
+  @include tablet {
+    margin-bottom: 7em;
+    margin-top: 5em;
+    margin-left: -50px;
+    padding-left: 100px;
+  }
+  @include desktop {
+    width: 70%;
+    padding-left: 60px;
+    
+  }
+  @include desktop-blah {
+    margin-left: 0;
+  }
+  @include tv {
+    padding-left: 110px;
+  }
+
+  .credits002-title {
+    letter-spacing: 2.67px;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family: $font-brand4;
+    font-weight: $heavy;
+    position: absolute;
+    top: -23px;
+    // padding-left: 0.5em;
+
+    @include palm-mid {
+      // padding-left: 1em;
+      top: -30px;
+      font-size: 40px;
+    }
+  }
+
+  .credits002-content {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    // padding-left: 0.5em;
+
+    @include palm-mid {
+      // padding-left: 1em;
+    }
+    @include tablet {
+      padding-bottom: 2em;
+    }
+
+    .single-credit {
+      padding-bottom: 35px;
+      text-transform: uppercase;
+      font-family: $font-brand4;
+      line-height: 1.2;
+      letter-spacing: 2.5px;
+      font-size: 14px;
+
+      @include tablet {
+        font-size: 18px;
+      }
+
+      .single-position {
+        font-weight: $heavy;
+      }
+    }
+  }
+}
+
+// Pagination002 -- Journal 
+.pagination002 {
+  position: relative;
+
+  @include palm-mid {
+    // width: 75%;  
+  }
+  @include tablet {
+    width: 70%;
+    margin-bottom: 2em;
+  }
+  @include laptop {
+    width: 50%;
+  }
+  @include desktop {
+    width: 60%;
+    opacity: 0;
+    height: calc(100vh - 30px);
+    background: $yellow;
+    padding-top: 20%;
+    // padding-left: 5.5em;
+    padding-right: 3.5em;
+  }
+
+  @include desktop-blah {
+    // width: 60%;
+    padding-top: 16%;
+    // padding-left: 3.5em;
+    padding-right: 3.5em;
+  }
+
+  @include tv {
+    width: 55%;
+    padding-left: 9em;
+    padding-right: 5em;
+  }
+
+  .single-pagination {
+    padding-bottom: 5em;
+    font-family: $font-brand4;
+    text-transform: uppercase;
+    font-weight: $heavy;
+
+    @include tv {
+      width: 75%;
+    }
+
+    .pagination002-title {
+      font-size: 14px;
+      padding-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .pagination002-project {
+      font-size: 24px;
+      letter-spacing: 2.8px;
+      line-height: 1.4;
+      display: inline;
+
+      @include desktop {
+        font-size: 28px;
+      }
+
+      @include desktop-blah {
+        font-size: 32px;
+      }
+    }
+  }
+}
+.pagination002-top-title {
+  text-transform: uppercase;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    /* padding-bottom: 10px; */
+    background: #c8f330;
+    padding: 20px 14px;
+    border-radius: 50%;
+    margin-top: 20px;
+    position: absolute;
+    right: 20px;
+
+    @include tablet {
+      top: 65px;
+    }
+    @include laptop {
+      top: 105px;
+      right: 50px;
+    }
+    @include desktop-blah {
+      top: 115px;
+    }
+
+    &.journal {
+      @include laptop {
+        top: 150px;
+        z-index: 5;
+      }
+    }
+}
+
+// Subheader
+.small_title_wrapper {
+  // padding-bottom: 25px;
+}
+.small_title_line {
+  display: inline-block;
+  width: 32px;
+  height: 2px;
+  background: black;
+  margin-bottom: 5px;
+}
+.small_title_text {
+  display: inline-block;
+  padding-top: 0px;
+  padding-left: 10px;
+  @include heavy_font(14px);
+}
+.small_title_description {
+  // padding-left: 45px;
+  font-weight: $normal;
+  font-size: 16px;
+  line-height: 1.6;
+
+  @include tablet {
+    // font-size: 14px;
+  }
+}
+
+// Buttons
+.sc-cta {
+  padding-left: 45px;
+  padding-top: 20px;
+
+  a {
+
+    &:hover {
+      text-decoration: none;
+      border-bottom: 0;
+      color: $color-brand2;
+      transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      -webkit-transition: 0.3s;
+      transform: translateX(7px);
+      -o-transform: translateX(7px);
+      -moz-transform: translateX(7px);
+      -webkit-transform: translateX(7px);
+    }
+    div {
+      border: 1px solid;
+      width: auto;
+      display: inline;
+      padding: 6px 15px;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: $font-brand4;
+      font-weight: $medium;
+    }
+  }
+}
+
+// CTAs
+a.brand_cta {
+    color: $off_white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: $heavy;
+    font-family: $font-brand4;
+
+    &:hover {
+        border-bottom: 0;
+        color: $off-black;
+    }
+
+    div {
+        border: 1px solid;
+        padding: 6px 10px;
+        display: inline;
+
+        &:hover {
+            background: $off-white;
+            border-color: $off-white;
+        }
+    }
+}
+
+
+
+// Landing Page CTAs
+.lp_lastcall_cta {
+    display: inline-block;
+    margin-bottom: 50px;
+
+    @include tablet {
+        margin-bottom: 150px;
+    }
+
+    a {
+        color: $neon-green;
+
+        &:hover {
+            background: $off-white;
+            color: $off-black;
+            // border: 1px solid $off-white;
+        }
+        div {
+            // border: 1px solid;
+            width: auto;
+            display: inline;
+            padding: 14px 25px;
+            @include heavy_font(16px);
+            
+
+            &:hover {
+                background-color: $burgundy;
+                color: $off-white;
+
+            }
+        }
+    }
+}
+
+
+
+// T H E M E A L P H A  C O M P O N E N T S
+
+// Home - Slider
+.myslide2 {
+  width: 100%;
+  position: relative;
+}
+.home-slide {
+  width: 100%;
+  background-size:cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 75vh !important;
+  margin: 0 4px;
+
+  @include tablet {
+      height: 85vh !important;
+  }
+
+  &:hover {
+    filter:sepia(50%);
+    -webkit-filter: sepia(50%);
+  }
+}
+.home-slide-meta {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 20px;
+  bottom: 40px;
+  background: rgba(0,0,0,0.3);
+  padding: 10px;
+
+  @include desktop {
+    width: 80%;
+  }
+  @include widescreen {
+    width: 65%;
+  }
+}
+.home-meta-title {
+  @include heavy_font(30px);
+  line-height: 1;
+  padding-bottom: 10px;
+
+  @include laptop {
+    font-size: 46px;
+    line-height: 1.1;
+  }
+
+  a {
+    // @include first-page-color;
+    color: $off-white;
+  }
+}
+.home-meta-description {
+  padding-top: 7px;
+  display: none;
+  padding-bottom: 7px;
+  color: $slideshow-text-color  ;
+
+  @include laptop {
+    display: block;
+    font-size: 20px;
+  }
+}
+
+// Journal Featured Slider
+.journal-featured-slider {
+  width: 100%;
+  position: relative;
+}
+.journal-slide {
+  width: 100%;
+  background-size:cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 55vh !important;
+  margin: 0 2px;
+
+  @include tablet {
+      height: 75vh !important;
+  }
+
+  @include desktop {
+    height: 90vh !important;
+  }
+
+  &:hover {
+    filter:sepia(50%);
+    -webkit-filter: sepia(50%);
+  }
+}
+
+
+
+// Film
+.full_height {
+  height: calc(100vh - 94px);
+}
+.film-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 7em;
+}
+.film-project {
+    height: 200px;
+    // width: 320px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+    @include palm {
+      height: 300px;
+      // width: 400px;
+    }
+    @include tablet-small {
+      height: 400px;
+    }
+
+  @include tablet {
+    height: 450px;
+      // width: 700px;
+  }
+  @include laptop {
+    height: 550px;
+    // width: 850px;
+  }
+  @include desktop-blah {
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 5em;
+  }
+}
+.catalog-play {
+  background: $yellow;
+}
+
+.four_wrapper {
+    height: calc(100vh - 125px);
+}
+.four_title {
+    color: $off-white;
+    font-size: 125px;
+    text-align: center;
+    font-family: $font-brand4;
+    font-weight: $heavy;
+    letter-spacing: 3px;
+}
+.four_subtitle {
+    color: $off-white;
+    text-transform: uppercase;
+    font-family: $font-brand4;
+    font-weight: $heavy;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-bottom: 45px;
+    text-align: center;
+}
+.four_cta {
+    text-align: center;
+}
+
+a.general_link {
+  color: $homepage-links-color;
+  border-bottom: 1px solid;
+
+  &:hover {
+    color: $homepage-links-hover;
+  }
+}
+.work-space-tag {
+  // border: 1px solid;
+  background: $off-white;
+  color: $off-black;
+  padding: 0.4em;
+  margin-right: 8px;
+  // border-radius: 4px;
+  @include heavy_font(10px);
+
+  a {
+    color: $light-brown;
+  }
+}
+
+// One-off Catalog Projects
+.avam-videos {
+  width: 100%;
+  height: 300px !important;
+  margin-bottom: 30px;
+  @include tablet {
+    width: 47%;
+    height: 300px !important;
+    margin: 0 10px 30px 0;
+  }
+  @include desktop-blah {
+    width: 31%;
+    height: 300px !important;
+    padding-bottom: 0 !important;
+    margin-right: 1.3vw;
+    margin-bottom: 2vh;  
+  }
+}
+.editorial-video {
+  margin-bottom: 75px;
+}
+
+
+.fixed-project-group {
+  display: none !important;
+  @include desktop-blah {
+    position: fixed;
+    display: block;
+    bottom: 8vh;
+    left: 6vw;  
+  }
+  
+  .image {
+    @include desktop-blah {
+      background-image: url('/dist/images/wayne_cover.jpg');
+      height: 125px;
+      width: 175px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  .image-title {
+    @include heavy_font(12px);
+    margin-top: 3px;
+    margin-bottom: 15px;
+  }
+  .fixed-project-title {
+    @include desktop-blah {
+      transform: rotate(270);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(270deg);
+    position: fixed;
+    left: -40px;
+    bottom: 190px;
+    font-size: 18px;
+    border-bottom: 1px solid;
+    letter-spacing: 1.5px;
+    }
+  }
+  a.image-title:hover {
+    border-bottom: 1px solid;
+  }
+}
+
+// Read More Bar
+.read_more_section {
+  margin: 75px 0 30px;
+
+  @include tablet {
+    margin: 75px 0 95px;
+  }
+
+  .read_more_bar {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-image: url('/dist/images/read-more-work.jpg');
+    height: 350px;
+    padding: 25px 20px 20px;
+
+    @include tablet {
+      height: auto;
+      padding: 55px 20px;
+    }
+    @include desktop-blah {
+      padding: 55px 50px;
+      // background-position: 10% 42%;
+    }
+
+  }
+  .read_more_pagination {
+    width: 60%;
+
+    @include tablet-small {
+      width: 35%;
+    }
+    @include desktop {
+      width: 25%;
+    }
+    @include desktop-blah {
+      width: 205px;
+    }
+
+    &.prev {
+      // padding-top: 25px;
+
+      @include tablet {
+        padding-top: 0;
+      }
+    }
+    &.next {
+      // padding-top: 125px;
+      padding-top: 85px;
+
+      @include tablet-small {
+        padding-top: 200px;
+      }
+      @include tablet {
+        padding-top: 0;
+      }
+    }
+  }
+  .read_more_arrow {
+    color: $off-white;
+    @include heavy_font(16px);
+  }
+  .read_more_title {
+    @include heavy_font(28px);
+    line-height: 1;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+    a {
+      color: $neon-green; 
+
+      &:hover {
+        color: $off-white;
+        border-bottom: 0;
+      } 
+    }
+  }
+}
+
+.block-editorial-img {
+  padding-bottom: 50px;
+
+  @include tablet {
+    padding-bottom: 75px;
+  }
+}
+
+// Back to Work Bar
+.wn-bg {
+  background-color: $soft-red;
+  margin-bottom: 40px;
+  padding: 50px 0;
+  text-transform: uppercase;
+
+  .wn-text {
+    font-family: $font-brand4;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2;
+    display:inline-block; vertical-align: top; padding-right: 7px;
+  }
+  .wn-text-small {
+    font-family: $font-brand4;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .work-nav-next {
+    @include tablet {
+      max-width: 350px;
+    }
+  }
+}
+
+
+.no-underline div {
+  &:hover {
+    border-bottom: none;
+    padding-bottom: 0;
+    text-decoration: none;
+  }
+}
+
+
+// JS Classes
+// - Waypoint Classes
+.js-dipper-animate {
+  opacity:0;
+  transition: 200ms linear;
+  -webkit-transition: 200ms linear;
+}
+.js-goslow {
+  opacity: 1;
+  transition: 200ms linear;
+  -webkit-transition: 200ms linear;
+}
+.goSlow,
+.workFade {
+  transition: 200ms linear;
+  -webkit-transition: 200ms linear;
+}
+
+// On Hover Show Background Classes
+.js_bg_receiver_work2.hover {
+  @include desktop {
+    height: 100vh;
+    width: 45%;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    display: block;
+    position: fixed;
+    // right: 1.5em;
+    right:0;
+    top: 38px;
+    transition: 200ms linear;
+    -webkit-transition: 200ms linear;
+  }
+  @include tv {
+    width: 55%;
+    right: 0;
+    height: 100vh;
+    top: 0;
+  }
+  
+}
+a.js_hover_trigger2 {
+  &:hover {
+    border-bottom: 1px solid;
+  }
+}
+.js_hover_trigger2 a {
+  position: relative;
+
+  &:hover {
+    border-bottom: 1px solid;
+
+  }
+}
+.js_bg_receiver_work_backstage.hover {
+  @include tablet {
+    height: 75vh;
+    width: 45%;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+  @include tv {
+    width: 100%;
+    right: 0;
+    height: 85vh;
+    bottom: 0;
+  }
+  
+}
+.hover-link {
+  &:hover {
+    border-bottom: 1px solid;
+    padding-bottom: 4px;
+  }
+}
+.transform-rotate {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  margin-bottom: 10em;
+}
+
+// Thumbnails Component
+.imageGallery1 {
+  
+}
+.single-thumbnail {
+  margin-bottom: 25px;
+  
+  @include tablet {
+    width: 31%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  @include desktop {
+    width: 250px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+
+// Footer CTAs
+.footer_cta_wrapper {
+
+}
+.footer_tag {
+  color: $off-white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: $font-brand4;
+  padding-bottom: 25px;
+}
+.single_footer_cta {
+  width: 100%;
+  padding: 50px 25px;
+
+  @include tablet-frow {
+    width: 50%;
+    padding: 25px 25px 70px;
+  }
+}
+.single_footer_wrapper {
+  @include palm-mid {
+    width: 75%;
+    margin: auto;
+  }
+  @include tablet-small {
+    width: 65%;
+    max-width: 365px;
+  }
+}
+.footer_slide {
+  padding-bottom: 20px;
+  width: 85%;
+  margin: auto;
+
+  @include desktop-blah {
+    width: 100%;
+  }
+}
+
+
+.footer_details_wrapper {
+  font-family: $font-brand4;
+  color: $off-white;
+
+  .footer_details_title {
+    text-transform: uppercase;
+    font-weight: $heavy;
+    padding-bottom: 5px;
+  }
+  .footer_details_notes {
+    font-size: 12px;
+  }
+}
+
+.footer_exc {
+  font-size: 46px;
+  text-transform: uppercase;
+  font-family: $font-brand4;
+  font-weight: $heavy;
+  line-height: 42px;
+  padding: 20px 0 30px;
+  text-align: center;
+
+  @include palm-mid {
+    font-size: 50px;
+    line-height: 44px;
+  }
+  @include tablet-small {
+    font-size: 60px;
+    line-height: 54px;
+  }
+  @include tablet-frow {
+    font-size: 40px;
+    line-height: 36px;
+  }
+  @include desktop {
+    font-size: 46px;
+    line-height: 40px;
+  }
+  @include desktop-blah {
+    padding: 35px 0;
+    font-size: 56px;
+    line-height: 50px;
+  }
+}
+.footer_exc_desc {
+  font-size: 12px;
+  letter-spacing: 0;
+  font-family: $font-brand4;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.brand_btn {
+  div {
+    text-align: center;
+    border: 2px solid;
+    font-family: $font-brand4;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 25px;
+    padding: 5px;
+    font-weight: $heavy;
+    width: 150px;
+    margin: auto;
+
+    &:hover {
+      background-color: $off-black;
+      color: $yellow;
+    }
+  }
+}
+
+.brand_btn_v2 {
+  @extend .brand_btn;
+
+  div {
+    width: 200px;
+    color: $yellow;
+    &:hover {
+      background: $yellow;
+      color: $off-black;
+    }
+  }
+}

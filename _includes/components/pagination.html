@@ -1,0 +1,57 @@
+{% if page.collection %}
+    {% assign links = site[page.collection]  %}
+{% endif %}
+
+{% for link in links %}
+    {% if link.title == page.title %}
+        {% unless forloop.first %}
+            {% assign prev = tmpprev %}
+        {% endunless %}
+        {% unless forloop.last %}
+            {% assign next = links[forloop.index] %}
+        {% endunless %}
+    {% endif %}
+    {% assign tmpprev = link %}
+{% endfor %}
+
+<script>
+document.body.onkeyup = function(e){
+if (e.keyCode == '37') { window.location = '{{prevurl}}'; }
+if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
+};
+</script>
+<div class="post_pagination_wrapper">
+    <div class="frow justify-between">
+        <div class="post_pagination_content">
+        {% if prev %}
+            <div class="post_pagination_header">
+                Previous Article
+            </div>
+            <a href="{{ prev.url }}"><div class="post_pagination_title">
+                {{ prev.title }}
+
+            </div>
+            <div>
+                <i class="fas fa-caret-left fa-2x"></i>
+            </div>
+        </a>
+        {% endif %}
+        </div>
+        <div class="post_pagination_content">
+        {% if next %}
+            <div class="post_pagination_header">
+                Next Article
+            </div>
+            <a href="{{ next.url }}"><div class="post_pagination_title">
+                {{ next.title }}
+
+            </div>
+            <div>
+                <i class="fas fa-caret-right fa-2x"></i>
+            </div>
+        </a>
+        {% endif %}
+        </div>
+    </div>
+
+</div>

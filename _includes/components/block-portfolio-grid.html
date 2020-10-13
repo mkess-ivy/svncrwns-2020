@@ -1,0 +1,46 @@
+<!-- Control buttons -->
+<section class="filterProjects">
+    <div class="filter-title">Filter by Project Category</div>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> All </button>
+      <button class="btn" onclick="filterSelection('photo')"> Photography </button>
+      <button class="btn" onclick="filterSelection('film')"> Films </button>
+      <button class="btn" onclick="filterSelection('website')"> Websites </button>
+      <button class="btn" onclick="filterSelection('special-project')"> Case Studies </button>
+    </div>
+</section>
+<div class="filter-container">
+<div class="portfolio_grid_work">
+  <div class="frow justify-start">
+    {% assign project_season = site.catalog | where: "portfolio-grid", "need" %}
+    {% for section in project_season %}
+    <div class="portfolio_single_work filterDiv {{ section.category }} ">
+      <a href="{{ section.url }}"><div class="portfolio_single_img workFade" style="background-image: url('{{section.portfolio-cover}}');"></div></a>
+      <div class="portfolio_single_title">
+      	<a href="{{ section.url }}">{{ section.title }}</a>
+        <!-- <div class="frow justify-start">
+        	{% case section.category %}
+        		{% when 'photo' %}
+        		<div class="work-space-tag photo">{{ section.category }}</div>
+        		{% when 'film' %}
+        		<div class="work-space-tag film">{{ section.category }}</div>
+        		{% when 'website' %}
+        		<div class="work-space-tag website">{{ section.category }}</div>
+        		{% when 'event' %}
+        		<div class="work-space-tag event">{{ section.category }}</div>
+        		{% when 'special-project' %}
+        		<div class="work-space-tag special-projects">{{ section.category }}</div>
+        	{% endcase %}
+        	{% if section.work-space == "in-house" %}
+        	<div class="work-space-tag in-house">{{ section.work-space }}</div>
+        	{% endif %}
+        	{% if section.work-space == "client" %}
+        	<div class="work-space-tag client">{{ section.work-space }}</div>
+        	{% endif %}
+        </div> -->
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</div>

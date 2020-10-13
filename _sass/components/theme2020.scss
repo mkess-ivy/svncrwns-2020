@@ -1,0 +1,522 @@
+.theme2020-intro {
+    height: 95vh;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    @include tablet {
+        height:100vh;
+    }
+
+    @include desktop-blah {
+        height: 95vh;
+        top: 55px;
+    }
+
+    .theme2020-title {
+        text-transform:uppercase;
+        font-family: $font-brand4;
+        font-weight: bold;
+        font-size: 48px;
+        color:$off-white;
+        padding-bottom: 50px;
+    }
+
+    .theme2020-locations {
+        position: absolute;
+        bottom:20px;
+
+        @include tablet {
+            bottom: 75px;
+        }
+
+        @include  desktop {
+            width: 700px;
+        }
+
+        @include desktop-blah {
+            bottom:20px;
+        }
+
+        ul {
+            color: $white;
+            text-transform: uppercase;
+            font-family: $font-brand4;
+            font-size:8px;
+
+            @include tablet {
+                font-size:12px;
+            }
+
+            @include  desktop {
+                font-size: 18px;
+            }
+
+            li {
+                list-style: none;
+                display: inline;
+                width:75px;
+
+                @include tablet {
+                    width:135px;
+                }
+            }
+        }
+    }
+}
+.theme2020-section {
+    padding-top: 7vh;
+
+    @include tablet {
+        padding: 7vh 0;
+    }
+
+    .theme2020-content {
+        width:100%;
+        padding-bottom:125px;
+
+        @include tablet {
+            width: 55%;
+            padding-bottom:0;
+        }
+    }
+}
+.theme2020-row {
+    margin-bottom:125px;
+
+    @include tablet {
+        margin-bottom: 150px;
+    }
+
+    &.end {
+        margin-bottom: 50px;
+    }
+}
+.theme2020-small {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $font-brand4;
+    padding-bottom: 10px;
+
+    @include tablet {
+        font-size: 16px;
+    }
+}
+.theme2020-copy {
+    font-weight: 300;
+    font-family: $font-brand4;
+    font-size: 24px;
+    padding-bottom: 35px;
+
+    @include tablet {
+        font-size: 28px;
+    }
+}
+.theme2020-btns {
+    display: block;
+    color: $off-black;
+
+    a:hover {
+    }
+    div {
+        border: 2px solid;
+        display: inline-block;
+        padding: 7px 25px;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: $font-brand4;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+
+        @include tablet {
+            font-size: 13px;
+        }
+
+        &:hover {
+            background: $off-black;
+            color: $off-white;
+        }
+    }
+
+    &.white {
+        
+        div {
+            color: $off-white;
+
+            &:hover {
+                border-color: $off-white;
+                background: $off-white;
+                color: $off-black;
+            }
+        }
+        
+    }
+}
+
+.theme2020-list {
+    font-family: $font-brand4;
+    font-size: 18px;
+    margin-bottom: 25px;
+
+    @include tablet {
+        margin-bottom: 30px;
+    }
+
+    li {
+        padding-bottom:7px;
+
+        a {
+            color:$off-black;
+            text-decoration: none;
+
+            &:hover {
+                border-bottom: 1px solid;
+                padding-bottom: 2px;
+            }
+            
+        }
+    }
+
+    &.footer {
+        li {
+            a {
+                div {
+                    display: inline-block;
+
+                    &:hover {
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+.theme2020-ownership {
+    width: 100%;
+    padding-bottom:125px;
+
+    @include tablet {
+        width: 70%;
+        padding-bottom:0;
+    }
+
+    @include desktop {
+        width:79%;
+    }
+}
+.reel {
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $off-white;
+    position: relative;
+    overflow: hidden;
+    width:100%;
+    background: url('/dist/images/theme2020reel-bg.png');
+
+    @include desktop {
+        height:75vh;
+    }
+}
+#video-bg {
+    min-width:100%;
+    min-height:100%;
+    height: auto;
+    width: auto;
+    z-index:1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include desktop {
+        height: 75vh;
+    }
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    text-align: center;
+    height: 100vh;
+
+    @include desktop {
+        height:75vh;
+    }
+}
+.reel-info {
+    text-align: center;
+
+    .reel-title {
+        text-transform: uppercase;
+        font-family: $font-brand4;
+        font-size: 14px;
+        padding-bottom: 30px;
+
+        @include tablet {
+            font-size: 24px;
+        }
+
+        @include desktop {
+            font-size: 28px;
+        }
+    }
+}
+
+.partners {
+    margin: 7vh 0;
+    .partners-wrapper {
+        width:95%;
+        margin-top:25px;
+
+        @include tablet {
+            width:90%;
+        }
+
+        @include desktop-blah {
+            width: 75%;
+        }
+    }
+    .logo-partner {
+        padding: 0 0px 30px 0;
+        width:100px;
+
+        @include tablet {
+            width:105px;
+            padding: 0 0 40px 0;
+        }
+
+        @include desktop {
+            width:175px;
+            text-align: center;
+        }
+    }
+}
+
+.newsletter {
+    background: $off-black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $off-white;
+    padding: 15vh 0;
+
+    @include desktop {
+        padding:7vh 0;
+    }
+
+    .newsletter-intro {
+        width: 100%;
+
+        @include tablet {
+            width:70%;
+        }
+
+        @include desktop-blah {
+            width: 40%;
+        }
+    }
+}
+
+.theme2020-footer {
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+    .theme2020-footer-col {
+        width:225px;
+        padding-bottom: 40px;
+
+        @include tablet {
+            width:205px;
+        }
+
+        @include desktop-blah {
+            padding-bottom: 0;
+        }
+    }
+
+    .left_footer_copy {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 11px;
+        font-family: $font-brand4;
+    }
+}
+.theme2020-footer-logo {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.theme2020-slider {
+    display: flex;
+    align-items: center;
+    height: 94vh;
+    width: 100vw;
+    background: $brown;
+    user-select: none;
+
+    @include tablet {
+        height: 96vh;
+    }
+
+    @include desktop {
+        height:97vh;
+    }
+    @include desktop-blah {
+        height: 95vh;
+    }
+
+    .slide {
+        width: 100vw;
+        height: 94vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        // filter: grayscale(90%);
+        position: 0 0;
+        // blend-mode: color-burn;
+
+        @include tablet {
+            height: 96vh;
+        }
+
+        @include desktop {
+            height:97vh;
+        }
+
+        @include desktop-blah {
+            height: 95vh;
+        }
+    }
+}
+.founders {
+    padding-bottom: 50px;
+}
+.menu-wrapper {
+    @include tablet {
+        padding-bottom:5px;
+    }
+}
+.theme2020-industries {
+    @include tablet {
+        min-width: 200px;
+    }
+}
+.gwcc-logo {
+    width:30px;
+
+    @include tablet {
+        width:40px;
+    }
+
+    @include desktop-blah {
+        width:50px;
+    }
+}
+
+// Contact Page
+.pagetitle {
+    font-family: $font-brand4;
+    font-size: 32px;
+    padding: 50px 0;
+}
+.inquiries {
+    width:110px;
+
+    @include tablet {
+        width:225px;
+    }
+
+    @include desktop  {
+        width: 175px;
+    }
+}
+.inquiries-info {
+    max-width: 800px;
+    padding:  30px 0 0 60px;
+
+    @include tablet {
+        width:75%;
+    }
+
+    @include desktop {
+        padding: 0 0 0 60px;
+    }
+}
+.inquiries-arrow {
+    padding:15px 0 0;
+
+    @include tablet {
+        padding:30px 0 0;
+    }
+}
+
+.instagram {
+    padding:40px;
+
+    .ig-single {
+        width: 100%;
+        text-align: center;
+        padding: 0 0 25px;
+        
+        @include tablet {
+            // min-width: 255px;
+            width: 50%;
+            padding: 0 0 35px;
+        }
+
+        @include desktop {
+            width: 19%;
+            padding-bottom: 0;
+        }
+    }
+}
+.t20-link {
+    color: $off-black;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-bottom: 1px;
+
+    &:hover {
+        color: $brown;
+    }
+}
+
+//  Portfolio
+.portfolio-single {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    height: 60vh;
+    margin: 15px;
+
+    @include tablet {
+        width: 31%;
+        margin: 5px 5px 25px 5px;
+        height: 40vh;
+    }
+
+    @include desktop {
+        width: 30%;
+        margin: 15px 15px 75px 15px;
+        height: 60vh;
+    }
+}
+.portfolio {
+    margin-bottom: 75px;
+}
+
+// Subscribe
+.embedded-form {
+    width:80%;
+
+    @include desktop {
+        margin: 100px 0px 60px;
+    }
+}

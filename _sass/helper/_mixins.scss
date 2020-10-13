@@ -1,0 +1,44 @@
+// Font Mixins
+@mixin heavy_font($size) {
+    font-family: $font-brand4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: $heavy;
+    font-size: $size;
+}
+@mixin medium_font($size) {
+    font-family: $font-brand4;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: $medium;
+    font-size: $size;
+}
+@mixin third_level_heading($font-size, $color) {
+    letter-spacing: 7px;
+    font-size: $font-size;
+    font-family: $font-brand3;
+    font-style: italic;
+    text-transform: uppercase;
+    color: $color;
+}
+@mixin border_title {
+    border-top: 1px solid;
+    padding-top: 10px;
+}
+
+@mixin font_size_lg {
+    font-size: 26px;
+}
+@mixin font_size_micro {
+    font-size: 12px  !important;
+}
+@mixin first-page-color {
+    color: $neon-green;
+}
+
+
+// Other Mixins
+// Mixin for the Journal Page - Background Gradient for two features on right sidebar
+@mixin bg_gradient($color1, $color2) {
+    background-image: linear-gradient(172deg, $color1, $color2);
+}

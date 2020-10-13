@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  {% include grid/head.html %}
+
+{% if page.title == "SVNCRWNS - Home" %}
+    <body style="background-color: {{ site.homepage-bg-color }};">
+{% endif %}
+
+{% unless page.title == "SVNCRWNS - Home" %}
+    <body style="background-color: #{{ page.bg_color }}; color: #{{ page.text_color }}; background-image:url({{ page.bg_img}});">
+{% endunless %}
+
+    <div class="se-pre-con"></div>
+
+    <header class="phase1-site-header">
+        
+        <div class="menu-wrapper">
+            <div class="left_header">
+                <div class="grid">
+                    <div class="frow justify-between">
+                      
+                        <a href="/"><img src="{{ site.theme2020-logo }}" width="25" style="margin: 5px 0;" /></a>
+  
+                        <div class="collapsed_menu_wrapper">
+                      
+                            <ul>
+                                {% for menu-item in site.data.menus.header %}
+                                <li><a href="{{ menu-item.url }}">{{ menu-item.title }}</a></li>
+                                {% endfor%}
+                            </ul>
+                        
+                        </div>
+  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
