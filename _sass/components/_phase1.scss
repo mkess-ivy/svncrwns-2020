@@ -18,8 +18,8 @@
     margin: 10px 100px 0;
   }
   @include tv {
-    max-width: 1350px;
-    margin: 10px 140px;
+    max-width: 1250px;
+    margin: 10px auto;
   }
   &.fixed_width_grid {
     @include desktop {
