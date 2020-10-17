@@ -9,4 +9,6 @@ page_sections:
   block: theme2020-pagetitle
 - template: block-theme2020-subscribe
   block: theme2020-subscribe
+- template: block-theme2020-workwithus
+  block: theme2020-workwithus
 ---
