@@ -1,17 +1,18 @@
 .theme2020-intro {
-    height: 95vh;
+    height: 93vh;
     position: absolute;
+    z-index: 2;
     top: 45px;
     left: 0;
     right: 0;
     text-align: center;
 
     @include tablet {
-        height:100vh;
+        // height:100vh;
     }
 
     @include desktop-blah {
-        height: 95vh;
+        // height: 95vh;
         top: 55px;
     }
 
@@ -559,5 +560,22 @@
 
     @include desktop {
         margin: 100px 0px 60px;
+    }
+}
+
+// Hero Video
+.theme2020-hero-video {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $off-white;
+    position: relative;
+    overflow: hidden;
+    width:100%;
+    // background: url('/dist/images/theme2020reel-bg.png');
+
+    @include desktop {
+        // height:75vh;
     }
 }

@@ -1645,18 +1645,15 @@ a.js_hover_trigger2:hover {
   .cbp-spmenu-push-toright {
     left: 190px; } }
 .theme2020-intro {
-  height: 95vh;
+  height: 93vh;
   position: absolute;
+  z-index: 2;
   top: 45px;
   left: 0;
   right: 0;
   text-align: center; }
-  @media screen and (min-width: 750px) {
-    .theme2020-intro {
-      height: 100vh; } }
   @media screen and (min-width: 1200px) {
     .theme2020-intro {
-      height: 95vh;
       top: 55px; } }
   .theme2020-intro .theme2020-title {
     text-transform: uppercase;
@@ -2069,6 +2066,16 @@ a.js_hover_trigger2:hover {
   @media screen and (min-width: 1024px) {
     .embedded-form {
       margin: 100px 0px 60px; } }
+
+.theme2020-hero-video {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #F7F7F7;
+  position: relative;
+  overflow: hidden;
+  width: 100%; }
 
 .font_size_lg {
   font-size: 26px;

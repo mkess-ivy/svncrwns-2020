@@ -6,7 +6,7 @@ seo-description: SVNCRWNS is a management company that empowers artists, entrepr
 seo-keywords: production company, svncrwns, e-commerce, women-owned businesses, creative
   team, consulting, business operations, launch my brand, manage my brand
 wwa-title: Who We Are
-wwa-description: We're a brand management company + studio – a team of artists, engineers + strategists that design and manage retail, wellness and lifestyle brands.  Our goal is to help you win.
+wwa-description: We're a brand management company + studio – a team of producers, engineers + strategists that design and manage retail, wellness and lifestyle brands.  Our goal is to help you win.
 wwd-title: What We Do
 wwd-subtitle: Bridging the gap for business + culture 
 wwd-description: We work with artists + businesses helping to share their stories, develop their audience and scale their business opportunity.
