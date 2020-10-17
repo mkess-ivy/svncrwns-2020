@@ -1,9 +1,7 @@
 <div class="theme2020-slider">
-    <div class="slide" style="background-image:url('/dist/images/theme2020-bg-001.png');"></div>
-    <div class="slide" style="background-image:url('/dist/images/theme2020-bg-002.png');"></div>
-    <div class="slide" style="background-image:url('/dist/images/theme2020-bg-003.png');"></div>
-    <div class="slide" style="background-image:url('/dist/images/theme2020-bg-004.png');"></div>
-    
+    {% for item in site.data.theme2020-slider %}
+    <div class="slide" style="background-image:url('{{ item.slide }}');"></div>
+    {% endfor %}
 </div>
 
 <div class="theme2020-intro">

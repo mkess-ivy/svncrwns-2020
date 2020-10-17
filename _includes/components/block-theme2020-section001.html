@@ -11,7 +11,7 @@
                         <div class="subject-title"><span class="plus">+</span> What We Do</div>
                         <div class="theme2020-small">{{ page.intro-title }}</div>
                         <div class="theme2020-copy">{{ page.intro-description }}</div>
-                        <a href="/contact/" class="theme2020-btns" alt="Contact SVNCRWNS"><div>Let's Talk</div></a>
+                        <a href="/contact/" class="theme2020-btns" alt="Contact SVNCRWNS"><div>Work With Us</div></a>
                     </div>
                 </div>
                 
@@ -22,7 +22,7 @@
                         <li>{{ item.cap }}</li>
                         {% endfor %}
                     </ul>
-                    <a href="/contact/" class="theme2020-btns" alt="View SVNCRWNS services"><div>View Services</div></a>
+                    <a href="{{ site.capabilities-doc }}" class="theme2020-btns" alt="View SVNCRWNS services" target="_blank"><div>View Services</div></a>
                 </div>
             </div>
         </div>
@@ -36,14 +36,7 @@
                     
                 </div>
     
-                <div class="theme2020-industries">
-                    <div class="theme2020-small">Industries</div>
-                    <ul class="theme2020-list">
-                        {% for item in site.data.industries %}
-                        <li>{{ item.industry }}</li>
-                        {% endfor %}
-                    </ul>
-                </div>
+                <!-- removed Industries - components/block-industries.html -->
             </div><!-- #.frow justify-start -->
         </div><!-- #.theme2020-row -->
     </div>

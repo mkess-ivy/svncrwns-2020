@@ -149,6 +149,8 @@
 .theme2020-btns {
     display: block;
     color: $off-black;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
 
     a:hover {
     }
@@ -169,6 +171,9 @@
         &:hover {
             background: $off-black;
             color: $off-white;
+            -webkit-transition: 0.7s;
+            transition: 0.7s;
+            border: 2px solid $off-black;
         }
     }
 

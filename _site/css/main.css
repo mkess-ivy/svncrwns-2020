@@ -1763,7 +1763,9 @@ a.js_hover_trigger2:hover {
 
 .theme2020-btns {
   display: block;
-  color: #070707; }
+  color: #070707;
+  -webkit-transition: 0.7s;
+  transition: 0.7s; }
   .theme2020-btns div {
     border: 2px solid;
     display: inline-block;
@@ -1778,7 +1780,10 @@ a.js_hover_trigger2:hover {
         font-size: 13px; } }
     .theme2020-btns div:hover {
       background: #070707;
-      color: #F7F7F7; }
+      color: #F7F7F7;
+      -webkit-transition: 0.7s;
+      transition: 0.7s;
+      border: 2px solid #070707; }
   .theme2020-btns.white div {
     color: #F7F7F7; }
     .theme2020-btns.white div:hover {

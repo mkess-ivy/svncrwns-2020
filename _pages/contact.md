@@ -12,5 +12,7 @@ page_sections:
   block: theme2020-pagetitle
 - template: block-theme2020-contact
   block: theme2020-contact
+- template: block-theme2020-newsletter
+  block: theme2020-newsletter
 ---
 
