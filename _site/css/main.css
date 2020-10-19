@@ -2085,6 +2085,9 @@ a.js_hover_trigger2:hover {
   position: relative;
   overflow: hidden;
   width: 100%; }
+  @media screen and (min-width: 1600px) {
+    .theme2020-hero-video {
+      height: 112vh; } }
 
 .font_size_lg {
   font-size: 26px;

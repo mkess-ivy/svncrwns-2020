@@ -578,4 +578,7 @@
     @include desktop {
         // height:75vh;
     }
+    @include bigscreen {
+        height: 112vh;
+    }
 }
