@@ -1657,20 +1657,20 @@ a.js_hover_trigger2:hover {
   height: 93vh;
   position: absolute;
   z-index: 2;
-  top: 45px;
+  top: 70px;
   left: 0;
   right: 0;
   text-align: center; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 750px) {
     .theme2020-intro {
-      top: 55px; } }
+      top: 45px;
+      height: calc(100vh - 45px); } }
   .theme2020-intro .theme2020-title {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 48px;
-    color: #F7F7F7;
-    padding-bottom: 50px; }
+    color: #F7F7F7; }
   .theme2020-intro .theme2020-locations {
     position: absolute;
     bottom: 20px; }
@@ -1710,7 +1710,7 @@ a.js_hover_trigger2:hover {
   padding-top: 7vh; }
   @media screen and (min-width: 750px) {
     .theme2020-section {
-      padding: 7vh 0; } }
+      padding: 7vh 0 0; } }
   .theme2020-section .theme2020-content {
     width: 100%;
     padding-bottom: 125px; }
@@ -1749,7 +1749,11 @@ a.js_hover_trigger2:hover {
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  padding-bottom: 10px; }
+  padding-bottom: 15px;
+  width: 55%; }
+  @media screen and (min-width: 400px) {
+    .theme2020-small {
+      width: auto; } }
   @media screen and (min-width: 750px) {
     .theme2020-small {
       font-size: 16px; } }
@@ -2077,7 +2081,7 @@ a.js_hover_trigger2:hover {
       margin: 100px 0px 60px; } }
 
 .theme2020-hero-video {
-  height: 100vh;
+  height: 93vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2085,6 +2089,9 @@ a.js_hover_trigger2:hover {
   position: relative;
   overflow: hidden;
   width: 100%; }
+  @media screen and (min-width: 750px) {
+    .theme2020-hero-video {
+      height: calc(100vh - 45px); } }
   @media screen and (min-width: 1600px) {
     .theme2020-hero-video {
       height: 112vh; } }

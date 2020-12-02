@@ -2,18 +2,14 @@
     height: 93vh;
     position: absolute;
     z-index: 2;
-    top: 45px;
+    top: 70px;
     left: 0;
     right: 0;
     text-align: center;
 
     @include tablet {
-        // height:100vh;
-    }
-
-    @include desktop-blah {
-        // height: 95vh;
-        top: 55px;
+        top: 45px;
+        height:calc(100vh - 45px);
     }
 
     .theme2020-title {
@@ -22,7 +18,7 @@
         font-weight: bold;
         font-size: 48px;
         color:$off-white;
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
     }
 
     .theme2020-locations {
@@ -77,7 +73,7 @@
     padding-top: 7vh;
 
     @include tablet {
-        padding: 7vh 0;
+        padding: 7vh 0 0;
     }
 
     .theme2020-content {
@@ -126,7 +122,12 @@
     text-transform: uppercase;
     font-weight: bold;
     font-family: $font-brand4;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    width: 55%;
+
+    @include palm {
+        width: auto;
+    }
 
     @include tablet {
         font-size: 16px;
@@ -565,7 +566,7 @@
 
 // Hero Video
 .theme2020-hero-video {
-    height: 100vh;
+    height: 93vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -575,8 +576,8 @@
     width:100%;
     // background: url('/dist/images/theme2020reel-bg.png');
 
-    @include desktop {
-        // height:75vh;
+    @include tablet {
+        height:calc(100vh - 45px);
     }
     @include bigscreen {
         height: 112vh;
