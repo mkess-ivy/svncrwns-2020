@@ -4,10 +4,10 @@
     <title>SVNCRWNS</title>
     <description>SVNCRWNS is a management company + studio. We use our skills and resources to work with clients to push their missions forward.  Services include Creative Direction, Strategy, Image Making and Web Design + Development
 </description>
-    <link>https://www.svncrwns.com/</link>
-    <atom:link href="https://www.svncrwns.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 20 Nov 2020 12:07:14 -0500</pubDate>
-    <lastBuildDate>Fri, 20 Nov 2020 12:07:14 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 02 Dec 2020 10:03:17 -0500</pubDate>
+    <lastBuildDate>Wed, 02 Dec 2020 10:03:17 -0500</lastBuildDate>
     <generator>Jekyll v3.6.3</generator>
     
   </channel>
