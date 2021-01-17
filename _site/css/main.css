@@ -1674,15 +1674,9 @@ a.js_hover_trigger2:hover {
   .theme2020-intro .theme2020-locations {
     position: absolute;
     bottom: 20px; }
-    @media screen and (min-width: 750px) {
-      .theme2020-intro .theme2020-locations {
-        bottom: 75px; } }
     @media screen and (min-width: 1024px) {
       .theme2020-intro .theme2020-locations {
         width: 700px; } }
-    @media screen and (min-width: 1200px) {
-      .theme2020-intro .theme2020-locations {
-        bottom: 20px; } }
     .theme2020-intro .theme2020-locations ul {
       color: #f7f7f7;
       text-transform: uppercase;
@@ -1841,10 +1835,16 @@ a.js_hover_trigger2:hover {
   position: relative;
   overflow: hidden;
   width: 100%;
-  background: url("/dist/images/theme2020reel-bg.png"); }
+  background-image: url("/dist/images/theme2020reel-bg.png"); }
   @media screen and (min-width: 1024px) {
     .reel {
       height: 75vh; } }
+
+.reel video {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    .reel video {
+      display: block; } }
 
 #video-bg {
   min-width: 100%;
@@ -1854,10 +1854,12 @@ a.js_hover_trigger2:hover {
   z-index: 1;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  display: none; }
   @media screen and (min-width: 1024px) {
     #video-bg {
-      height: 75vh; } }
+      height: 75vh;
+      display: block; } }
 
 .video-overlay {
   position: absolute;
@@ -2095,6 +2097,20 @@ a.js_hover_trigger2:hover {
   @media screen and (min-width: 1600px) {
     .theme2020-hero-video {
       height: 112vh; } }
+
+.cw-wp,
+.reel-bg {
+  position: relative;
+  width: 100%;
+  filter: opacity(0.2);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+  @media screen and (min-width: 1024px) {
+    .cw-wp,
+    .reel-bg {
+      display: none; } }
 
 .font_size_lg {
   font-size: 26px;
