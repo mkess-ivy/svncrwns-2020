@@ -36,6 +36,11 @@
     color: $neon-green;
 }
 
+@mixin general {
+    text-transform: uppercase;
+    font-family: $font-brand4;
+}
+
 
 // Other Mixins
 // Mixin for the Journal Page - Background Gradient for two features on right sidebar

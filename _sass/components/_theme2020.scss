@@ -608,3 +608,43 @@
         display: none;
     }
 }
+
+// Clients
+.client {
+    @include tablet {
+        width: 60%;
+    }
+
+    margin: 50px 0;
+}
+.client_title {
+    font-family: $font-brand4;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+.client_desc {
+    font-weight: 16px;
+    font-family: $font-brand4;
+}
+
+.default_title {
+    @include general;
+    font-size: 28px;
+    margin: 50px 0;
+    font-weight: bold;
+}
+.client_list {
+    li {
+        @include general;
+        font-size: 32px;
+        padding-bottom: 10px;
+
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+
+    }
+}

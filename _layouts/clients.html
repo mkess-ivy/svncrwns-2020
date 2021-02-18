@@ -1,0 +1,15 @@
+{% include grid/theme2020-header.html %}
+
+
+    {% for section in page.page_sections %}
+        {% include components/block-{{section.block}}.html %}
+    {% endfor %}
+
+    <div class="grid">
+        <section class="client_project">
+            {{ page.content }}
+        </section>
+    </div>
+
+{% include components/backtop_icon.html %}
+{% include grid/theme2020-footer.html %}

@@ -1,0 +1,12 @@
+<div class="grid">
+    <section class="clientlist">
+        <div class="default_title">
+            {{ page.title }}
+        </div>
+        <ul class="client_list">
+            {% for item in site.data.clientlist %}
+            <li><a href="{{ item.url }}">{{ item.client }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>
