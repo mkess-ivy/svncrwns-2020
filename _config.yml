@@ -15,15 +15,8 @@ markdown: kramdown
 # Site Variables
 logo: "/dist/images/svn-logo.svg"
 theme2020-logo: "/dist/images/crwns-logo-graphic-b.png"
-footer-logo: /dist/images/crwns-logo-graphic-b.png
-footer-copyright: ©2015 — 2021. All Rights Reserved
-instagram: https://www.instagram.com/svncrwns
 facebook: https://www.facebook.com/svncrwns
-capabilities-doc: http://www.svncrwns.com/SVNCRWNS-2021-SERVICES.pdf
-montier-site: http://www.montierkess.co
-chavon-site: https://www.xovonlee.com
-cultureintersects: http://www.cultureintersects.com
-blacklove: http://www.blackloveoffering.com
+capabilities-doc: http://www.svncrwns.com/SVNCRWNS2021SERVICES.pdf
 
 # Brand Colors
 homepage-bg-color: '#f7f7f7'

@@ -1,15 +1,15 @@
 .theme2020-intro {
-    height: 93vh;
+    height: 90vh;
     position: absolute;
     z-index: 2;
-    top: 70px;
+    top: 100px;
     left: 0;
     right: 0;
     text-align: center;
 
     @include tablet {
-        top: 45px;
-        height:calc(100vh - 45px);
+        top: 75px;
+        height:calc(100vh - 75px);
     }
 
     .theme2020-title {
@@ -123,7 +123,7 @@
     font-weight: bold;
     font-family: $font-brand4;
     padding-bottom: 15px;
-    width: 55%;
+    width: 75%;
 
     @include palm {
         width: auto;
@@ -283,7 +283,7 @@
     display: none;
 
     @include desktop {
-        height: 75vh;
+        // height: 75vh;
         display: block;
     }
 }
@@ -449,11 +449,7 @@
 .founders {
     padding-bottom: 50px;
 }
-.menu-wrapper {
-    @include tablet {
-        padding-bottom:5px;
-    }
-}
+
 .theme2020-industries {
     @include tablet {
         min-width: 200px;
@@ -589,7 +585,7 @@
         height:calc(100vh - 45px);
     }
     @include bigscreen {
-        height: 112vh;
+        height: 95vh;
     }
 }
 

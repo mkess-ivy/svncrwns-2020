@@ -1,0 +1,59 @@
+# Footer Menu
+links:
+- title: Home
+  url: /
+- title: Services
+  url: http://www.svncrwns.com/SVNCRWNS2021SERVICES.pdf
+  target: yes
+- title: Portfolio
+  url: /portfolio/
+- title: Contact
+  url: /contact/
+- title: Instagram
+  url: https://www.instagram.com/svncrwns
+  target: yes
+- title: Subscribe
+  url: /subscribe/
+
+founders:
+- title: Von Lee
+  url: https://www.xovonlee.com
+- title: Montier Kess
+  url: http://www.montierkess.co
+
+brands:
+- title: Culture Intersects
+  url: http://www.cultureintersects.com
+- title: Black Love Offering
+  url: http://www.blackloveoffering.com
+
+# Header Menu
+header:
+- url: "/contact"
+  title: Contact
+  weight: 1
+  theme2020_logo: /dist/images/crwns-logo-graphic-b.png
+  width: 30
+- global-logo: /dist/images/svncrwns-logo-2020.png
+  global-logo-white: /dist/images/svncrwns-logo-2020-white.png
+  width: 150
+
+# Copyright info in Footer
+copyright:
+- url: /
+  footer_logo: /dist/images/crwns-logo-graphic-b.png
+  width: 20
+  text: ©2015 + BEYOND. All Rights Reserved
+
+# Newsletter Component on Home and Contact page
+newsletter:
+- newsletter-title: Get on the list
+  newsletter-desc: We make really cool emails that are packed w/ insights + tools for running your biz.  Check us out and let us know what you think.
+  newsletter-url: /subscribe/
+  newsletter-link-title: Subscribe
+
+# Topbar
+topbar:
+- text: accepting new clients for summer 2021
+  url:  http://www.svncrwns.com/SVNCRWNS2021SERVICES.pdf
+  link_title: view services

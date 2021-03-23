@@ -1654,17 +1654,17 @@ a.js_hover_trigger2:hover {
   .cbp-spmenu-push-toright {
     left: 190px; } }
 .theme2020-intro {
-  height: 93vh;
+  height: 90vh;
   position: absolute;
   z-index: 2;
-  top: 70px;
+  top: 100px;
   left: 0;
   right: 0;
   text-align: center; }
   @media screen and (min-width: 750px) {
     .theme2020-intro {
-      top: 45px;
-      height: calc(100vh - 45px); } }
+      top: 75px;
+      height: calc(100vh - 75px); } }
   .theme2020-intro .theme2020-title {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
@@ -1744,7 +1744,7 @@ a.js_hover_trigger2:hover {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   padding-bottom: 15px;
-  width: 55%; }
+  width: 75%; }
   @media screen and (min-width: 400px) {
     .theme2020-small {
       width: auto; } }
@@ -1858,7 +1858,6 @@ a.js_hover_trigger2:hover {
   display: none; }
   @media screen and (min-width: 1024px) {
     #video-bg {
-      height: 75vh;
       display: block; } }
 
 .video-overlay {
@@ -1986,10 +1985,6 @@ a.js_hover_trigger2:hover {
   padding-bottom: 50px; }
 
 @media screen and (min-width: 750px) {
-  .menu-wrapper {
-    padding-bottom: 5px; } }
-
-@media screen and (min-width: 750px) {
   .theme2020-industries {
     min-width: 200px; } }
 
@@ -2096,7 +2091,7 @@ a.js_hover_trigger2:hover {
       height: calc(100vh - 45px); } }
   @media screen and (min-width: 1600px) {
     .theme2020-hero-video {
-      height: 112vh; } }
+      height: 95vh; } }
 
 .cw-wp,
 .reel-bg {
@@ -2582,12 +2577,15 @@ body.color_layout {
       display: none !important; } }
 
 /* Phase 1 Header */
-@media screen and (min-width: 750px) {
-  .phase1-site-header.project-layout {
-    background: rgba(255, 255, 255, 0.35);
-    padding: 5px 15px 0;
-    border-radius: 24px;
-    margin-top: 14px; } }
+.phase1-site-header {
+  position: relative;
+  margin-top: 10px; }
+  @media screen and (min-width: 750px) {
+    .phase1-site-header.project-layout {
+      background: rgba(255, 255, 255, 0.35);
+      padding: 5px 15px 0;
+      border-radius: 24px;
+      margin-top: 14px; } }
 
 .phase1_menu_btn {
   text-indent: 0;
@@ -2847,7 +2845,8 @@ ul.nav li a:hover::after {
   width: 100%; }
   @media screen and (min-width: 600px) {
     .left_header {
-      width: auto; } }
+      width: auto;
+      margin-bottom: -9px; } }
   @media screen and (min-width: 767px) {
     .left_header {
       width: auto; } }
@@ -2863,6 +2862,10 @@ ul.nav li a:hover::after {
     .menu_crown a:hover {
       text-decoration: none;
       border: none; }
+
+@media screen and (min-width: 750px) {
+  .menu-wrapper {
+    padding-bottom: 10px; } }
 
 @media screen and (min-width: 750px) {
   .collapsed_menu_wrapper {
@@ -3048,6 +3051,21 @@ ul.nav li a:hover::after {
 @media screen and (min-width: 1439px) {
   .site-logo {
     margin: 10px 35px 0 150px; } }
+
+.topbar {
+  width: 100%;
+  background-color: #503C2B;
+  color: #F7F7F7;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 7px 0; }
+  .topbar a {
+    color: #F7F7F7;
+    text-decoration: none; }
+    .topbar a:hover {
+      text-decoration: underline; }
 
 .services_title_wrapper {
   color: #F7F7F7;

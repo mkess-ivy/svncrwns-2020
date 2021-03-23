@@ -3,42 +3,48 @@
         
         <div class="theme2020-row end">
             <div class="frow justify-start">
+                <!-- Links -->
                 <div class="theme2020-footer-col">
+                    
                     <div class="theme2020-small">Links</div>
                     <ul class="theme2020-list footer">
-                        
-                        <li><a href="/"><div>Home</div></a></li>
-                        <li><a href="{{ site.capabilities-doc }}" target="_blank"><div>Services</div></a></li>
-                        <li><a href="/portfolio/"><div>Portfolio</div></a></li>
-                        <li><a href="/contact/"><div>Contact</div></a></li>
-                        <li><a href="{{ site.instagram }}" target="_blank"><div>Instagram</div></a></li>
-                        <li><a href="/subscribe/"><div>Subscribe</div></a></li>
+                        {% for item in site.data.site_settings.links %}
+                        <li><a href="{{ item.url }}" {% if item.target %}target="_blank"{% endif %}><div>{{ item.title }}</div></a></li>
+                        {% endfor %}
                     </ul>
                 </div>
+                <!-- Founders -->
                 <div class="theme2020-footer-col">
                     <div class="theme2020-small">Founders</div>
                     <ul class="theme2020-list footer">
-                        <li><a href="{{ site.chavon-site }}"><div>Chavon Lee</div></a></li>
-                        <li><a href="{{ site.montier-site }}" target="_blank"><div>Montier Kess</div></a></li>
+                        {% for item in site.data.site_settings.founders %}
+                        <li><a href="{{ item.url }}" target="_blank"><div>{{ item.title }}</div></a></li>
+                        {% endfor %}
                     </ul>
                 </div>
+                <!-- Brands -->
                 <div class="theme2020-footer-col">
                     <div class="theme2020-small">Brands</div>
                     <ul class="theme2020-list footer">
-                        <li><a href="{{ site.cultureintersects }}" target="_blank"><div>Culture Intersects</div></a></li>
-                        <li><a href="{{ site.blacklove }}" target="_blank"><div>Black Love Offering</div></a></li>
+                        {% for item in site.data.site_settings.brands %}
+                        <li><a href="{{ item.url }}" target="_blank"><div>{{ item.title }}</div></a></li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
         </div>
         <div class="theme2020-footer-bottom">
             <div class="frow justify-between">
+                <!-- Copyright -->
+                {% for item in site.data.site_settings.copyright %}
                 <div class="left_footer">
-                    <a href="/" class="theme2020-footer-logo"><img src = "{{ site.footer-logo }}" width="20" /></a>
+                    <a href="{{ item.url }}" class="theme2020-footer-logo"><img src = "{{ item.footer_logo }}" width="{{ item.width }}" /></a>
                     <div class="left_footer_copy">
-                        {{ site.footer-copyright }}
+                        {{ item.text }}
                     </div>
                 </div>
+                {% endfor %}
+
             </div>
         </div>
             

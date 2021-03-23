@@ -15,10 +15,9 @@
         <div class="theme2020-locations">
             <ul>
                 <div class="frow justify-between">
-                    <li>Baltimore</li>
-                    <li>New York</li>
-                    <li>Atlanta</li>
-                    <li>Los Angeles</li>
+                    {% for item in page.locations %}
+                    <li>{{ item.location }}</li>
+                    {% endfor %}
                 </div>
                 
             </ul>

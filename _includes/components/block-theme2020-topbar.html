@@ -1,0 +1,5 @@
+{% for item in site.data.site_settings.topbar %}
+<section class="topbar">
+    {{ item.text }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{ item.url }}">{{ item.link_title }}</a>
+</section>
+{% endfor %}
