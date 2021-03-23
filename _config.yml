@@ -16,7 +16,9 @@ markdown: kramdown
 logo: "/dist/images/svn-logo.svg"
 theme2020-logo: "/dist/images/crwns-logo-graphic-b.png"
 facebook: https://www.facebook.com/svncrwns
+instagram: https://www.instagram.com/svncrwns
 capabilities-doc: http://www.svncrwns.com/SVNCRWNS2021SERVICES.pdf
+scheduling-link: https://calendly.com/svncrwns/svncrwns-sessions?month=2020-10
 
 # Brand Colors
 homepage-bg-color: '#f7f7f7'
