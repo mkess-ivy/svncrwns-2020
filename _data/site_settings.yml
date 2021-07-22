@@ -27,6 +27,12 @@ brands:
 - title: Black Love Offering
   url: http://www.blackloveoffering.com
 
+getstarted:
+- title: Discovery
+  url: https://calendly.com/svncrwns/svncrwns-sessions
+- title: Retainers
+  url: https://calendly.com/svncrwns/svncrwns-mgmt-retainer
+
 # Header Menu
 header:
 - url: "/contact"
