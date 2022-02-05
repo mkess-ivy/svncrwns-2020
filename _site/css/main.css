@@ -2107,6 +2107,16 @@ a.js_hover_trigger2:hover {
     .reel-bg {
       display: none; } }
 
+.theme2020-hero-image {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .theme2020-hero-image .company {
+    margin: auto;
+    width: 300px; }
+
 .client {
   margin: 50px 0; }
   @media screen and (min-width: 750px) {

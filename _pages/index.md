@@ -6,6 +6,10 @@ seo-description: SVNCRWNS is a management company that empowers artists, entrepr
 seo-keywords: production company, svncrwns, e-commerce, women-owned businesses, creative
   team, consulting, business operations, launch my brand, manage my brand
 
+# Variables for all content on the homepage.
+hero-img: /dist/images/theme2020-bg-004.png
+company-img: /dist/images/white-svncrwns-logo.png
+
 capabilities:
 - cap: "Strategy"
 - cap: "Brand Design"
@@ -40,7 +44,7 @@ wwd-title: What We Do
 wwd-subtitle: Bridging the gap for business + culture 
 wwd-description: We work with artists + businesses helping to share their stories, develop their audience and scale their business opportunity.
 
-
+# Templates are in - includes/components
 page_sections:
 - template: block-theme2020-hero
   block: theme2020-hero

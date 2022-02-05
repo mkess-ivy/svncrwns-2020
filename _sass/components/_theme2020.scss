@@ -605,6 +605,18 @@
     }
 }
 
+// Hero Image
+.theme2020-hero-image {
+    width: 100%;
+    height: 100vh;
+    @include bgimg;
+
+    .company {
+        margin: auto;
+        width: 300px;
+    }
+}
+
 // Clients
 .client {
     @include tablet {

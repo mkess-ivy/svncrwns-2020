@@ -41,6 +41,12 @@
     font-family: $font-brand4;
 }
 
+@mixin bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 // Other Mixins
 // Mixin for the Journal Page - Background Gradient for two features on right sidebar

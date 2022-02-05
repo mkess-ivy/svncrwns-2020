@@ -1,17 +1,21 @@
 <!-- removed components/block-theme2020-slider -->
-<div class="theme2020-hero-video" style="background-image:url('/dist/images/hero-video-2020-fallback.png');">
+<!-- Styles - sass/components/theme2020.scss -->
+<!-- <div class="theme2020-hero-video" style="background-image:url('/dist/images/hero-video-2020-fallback.png');">
     <video id="video-bg" loop muted autoplay poster="/dist/images/hero-video-2020-fallback.png">
         <source src="/dist/images/hero-video-2020.mp4" type="video/mp4">
     </video>
     <div class="cw-wp" style="background-image:url('/dist/images/crwns-wp002.gif');"></div>
+</div> -->
+
+<div class="theme2020-hero-image" style="background-image:url({{ page.hero-img }});">
+    <div class="frow centered">
+        <div class="company"><img src="{{ page.company-img }}" /></div>
+    </div>
 </div>
-
-
-
 
 <div class="theme2020-intro">
     <div class="frow centered-column">
-        <div class="theme2020-title">SVNCRWNS</div>
+        <!-- <div class="theme2020-title">SVNCRWNS</div> -->
         <div class="theme2020-locations">
             <ul>
                 <div class="frow justify-between">
@@ -23,5 +27,4 @@
             </ul>
         </div>
     </div>
-    
 </div>
